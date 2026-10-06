@@ -1,0 +1,623 @@
+{
+    "header": {
+        "home": "Startseite",
+        "contact": "Kontakt",
+        "refundPolicy": "Rückgabe- und Erstattungsrichtlinien",
+        "login": "Anmelden / Registrieren",
+        "shop": "Shop",
+        "myAccount": "Mein Konto",
+        "buyNow": "Jetzt kaufen",
+        "cart": "Warenkorb",
+        "announcement": "Sofortige Lieferung • 30 Tage Geld-zurück-Garantie • 24/7 Support"
+    },
+    "footer": {
+        "company": {
+            "title": "LIGHTBURN",
+            "subtitle": "Bessere Software für Laserschneider",
+            "description": "Professionelle Lasergravur-Software. Einmaliger Kauf, lebenslange Aktivierung."
+        },
+        "quickLinks": {
+            "title": "Schnelllinks",
+            "shop": "Shop",
+            "myAccount": "Mein Konto",
+            "search": "Suche"
+        },
+        "legal": {
+            "title": "Rechtliches",
+            "privacy": "Datenschutzerklärung",
+            "terms": "Allgemeine Geschäftsbedingungen",
+            "refund": "Rückgaberichtlinie",
+            "delivery": "Lieferbedingungen"
+        },
+        "support": {
+            "title": "Support",
+            "contact": "Kontakt",
+            "available": "24/7 Kundensupport"
+        },
+        "copyright": "LightBurn Pro. Alle Rechte vorbehalten."
+    },
+    "hero": {
+        "title": "LightBurn ist Layout-, Bearbeitungs- und Steuerungssoftware für Ihren Laserschneider.",
+        "subtitle": "Layout-, Bearbeitungs- und Steuerungssoftware für Ihren Laserschneider. Einmalige Zahlung, sofortige Lieferung, kein Abonnement. Nur für Windows.",
+        "oneTimePayment": "Einmalige Zahlung – Kein Abonnement erforderlich.",
+        "buyNow": "Jetzt kaufen",
+        "titleStart": "LightBurn Pro 2.0 2026 -",
+        "titleHighlight": "Software",
+        "titleEnd": "für Laserschneider",
+        "rating": "5/5 von verifizierten Kunden bewertet",
+        "instantAccess": "Sofortzugang",
+        "save": "{discount}% sparen",
+        "cta": "Jetzt sofort Zugang erhalten",
+        "secureCheckout": "Sicherer Checkout — 256-Bit-SSL-Verschlüsselung",
+        "offer": "Zeitlich begrenztes Angebot: heute {discount}% sparen — nur {price} (regulär {original})",
+        "benefits": [
+            "Sofortige Lieferung (1-30 Minuten)",
+            "Lebenslange Aktivierung",
+            "12 Monate kostenlose Updates",
+            "Keine versteckten Kosten oder Gebühren",
+            "24/7 Kundensupport",
+            "30 Tage Geld-zurück-Garantie"
+        ],
+        "platform": "Für Windows 10 & 11"
+    },
+    "stats": {
+        "title": "Bessere Software für",
+        "highlight": "Laserschneider!",
+        "items": [
+            {
+                "title": "SOFORTIGE LIEFERUNG",
+                "subtitle": "1-30 Min"
+            },
+            {
+                "title": "KEINE ZUSATZKOSTEN",
+                "subtitle": "Keine Gebühren"
+            },
+            {
+                "title": "SICHERE ZAHLUNG",
+                "subtitle": "Kreditkarte"
+            },
+            {
+                "title": "24/7 SUPPORT",
+                "subtitle": "Rund um die Uhr verfügbar"
+            }
+        ]
+    },
+    "motivation": {
+        "title": "Layout-, Bearbeitungs- und Steuerungssoftware für Ihren Laserschneider mit",
+        "highlight": "LightBurn",
+        "subtitle": "LightBurn ist eine native Anwendung nur für Windows.",
+        "features": [
+            {
+                "title": "Grafiken importieren",
+                "description": "Importieren Sie Grafiken in einer Vielzahl gängiger Vektorgrafik- und Bildformate."
+            },
+            {
+                "title": "Bearbeiten & Erstellen",
+                "description": "Arrangieren, bearbeiten und erstellen Sie sogar neue Vektorformen im leistungsstarken Editor von LightBurn."
+            },
+            {
+                "title": "Einstellungen anwenden",
+                "description": "Wenden Sie Einstellungen wie Leistung, Geschwindigkeit, Anzahl der Durchgänge, Schnittreihenfolge, Helligkeit & Kontrast, Dithering-Modus und vieles mehr an!"
+            }
+        ]
+    },
+    "productShowcase": {
+        "tagline": "Bessere Software für Laserschneider",
+        "inStock": "Auf Lager - Sofortige Lieferung",
+        "cta": "Details anzeigen & In den Warenkorb"
+    },
+    "whyChoose": {
+        "title": "Warum",
+        "highlight": "LightBurn wählen?",
+        "ready": "Bereit, die Kontrolle über Ihren Laser zu übernehmen?",
+        "cta": "Jetzt loslegen",
+        "benefits": [
+            "Die beste Lasergravur-Software – Vertraut von Tausenden von Benutzern weltweit",
+            "Funktioniert für alle Länder",
+            "Schnelle und einfache Installation – In wenigen Minuten startklar",
+            "30 Tage kostenlose Testversion – Testen Sie vor dem Kauf",
+            "Sichere Zahlung – Zahlen Sie mit Kreditkarte und mehr",
+            "100% Zufriedenheitsgarantie oder Geld zurück – Kaufen Sie mit Vertrauen"
+        ]
+    },
+    "faq": {
+        "title": "FAQ für",
+        "highlight": "LightBurn",
+        "items": [
+            {
+                "question": "Wie lange ist meine Lizenz gültig?",
+                "answer": "LightBurn funktioniert für immer, solange Sie Ihren Lizenzschlüssel haben. Nach einem Jahr müssen Sie jedoch die Wartung Ihrer Lizenz erneuern, um weiterhin die neuesten Funktionen und Updates zu erhalten."
+            },
+            {
+                "question": "Mit welchen Betriebssystemen funktioniert Ihre Software?",
+                "answer": "Windows 10+"
+            },
+            {
+                "question": "Ist LightBurn mit meiner Lasermaschine kompatibel?",
+                "answer": "LightBurn unterstützt: Ruida (CO2), GRBL (Dioden- und CO2-Laser), Smoothieboard, TopWisdom, EZCad2 & EZCad2-Lite (Galvo-Faser, CO2 und UV). Unsicher bezüglich der Kompatibilität? Laden Sie die kostenlose Testversion herunter und testen Sie sie direkt mit Ihrer Maschine."
+            },
+            {
+                "question": "Funktioniert LightBurn auf Windows, Mac und Linux?",
+                "answer": "Ja! LightBurn ist nur mit Windows kompatibel. Testen Sie es risikofrei – Laden Sie die 30-tägige kostenlose Testversion herunter und sehen Sie, wie es auf Ihrem Gerät funktioniert!"
+            },
+            {
+                "question": "Ist LightBurn ein Abonnement oder ein einmaliger Kauf?",
+                "answer": "LightBurn ist ein einmaliger Kauf – Kein monatliches Abonnement! Wenn Sie LightBurn kaufen, erhalten Sie lebenslangen Zugriff mit 12 Monaten kostenlosen Updates inklusive."
+            },
+            {
+                "question": "Was passiert nach 12 Monaten? Muss ich erneut bezahlen?",
+                "answer": "Nein, Sie müssen nicht erneut bezahlen. Nach 12 Monaten können Sie LightBurn mit der letzten erhaltenen Version unbegrenzt weiterverwenden. Wenn Sie nach dem ersten Jahr neue Updates erhalten möchten, können Sie Ihre Lizenz jederzeit erneuern, dies ist jedoch völlig optional."
+            },
+            {
+                "question": "Kann mein gesamtes Team die Software nutzen?",
+                "answer": "Ja, auch gewerbliche Unternehmen können dieselbe Aktivierung ohne zusätzliche Kosten für ihr gesamtes Team nutzen."
+            },
+            {
+                "question": "Wie kaufe ich die Software?",
+                "answer": "Es ist ganz einfach! Fügen Sie sie einfach Ihrem Warenkorb hinzu, geben Sie Ihre Daten ein, und Sie erhalten Ihren Download-Link direkt nach Abschluss Ihres Kaufs."
+            }
+        ]
+    },
+    "reviews": {
+        "title": "Bewertung 5/5",
+        "subtitle": "von verifizierten Benutzern",
+        "items": [
+            {
+                "name": "Sarah M.",
+                "role": "Verifizierter Kauf",
+                "text": "Der Bestellprozess war einfach, und mein Schlüssel kam sofort nach der Zahlung. LightBurn ist sehr benutzerfreundlich und bietet viele Funktionen, die meine Arbeit erleichtern. Top Service!"
+            },
+            {
+                "name": "James R.",
+                "role": "Verifizierter Kauf",
+                "title": "Perfekte Laser-Software – Einfach zu installieren & Lebenslanger Zugriff!",
+                "text": "LightBurn ist einfach fantastisch! Die Installation war schnell und mühelos, und innerhalb weniger Minuten war ich bereit zum Gravieren. Die Software ist unglaublich benutzerfreundlich, mit leistungsstarken Werkzeugen, die das Entwerfen und Steuern meines Lasers einfach machen."
+            },
+            {
+                "name": "Maria L.",
+                "role": "Designerin",
+                "title": "Hervorragende Laser-Software",
+                "text": "Es ist ein einmaliger Kauf mit lebenslanger Lizenz! Keine Abonnements, keine versteckten Gebühren – einfach einmal kaufen und für immer nutzen. Außerdem erhalten Sie 12 Monate kostenlose Updates, und auch danach funktioniert die Software perfekt weiter. LightBurn ist schnell, zuverlässig und arbeitet nahtlos mit meinem Laser zusammen."
+            }
+        ]
+    },
+    "cart": {
+        "empty": {
+            "title": "Ihr Warenkorb ist leer",
+            "message": "Es sieht so aus, als hätten Sie noch keine Artikel in Ihren Warenkorb gelegt. Beginnen Sie mit dem Einkaufen, um ihn zu füllen!"
+        },
+        "continueShopping": "Weiter einkaufen",
+        "title": "Warenkorb",
+        "clear": "Warenkorb leeren",
+        "summary": {
+            "title": "Bestellübersicht",
+            "subtotal": "Zwischensumme",
+            "save": "Sie sparen",
+            "total": "Gesamt",
+            "checkout": "Zur Kasse"
+        },
+        "trust": {
+            "official": "Offizielles Lizenzprodukt",
+            "secure": "Sicherer SSL-Checkout",
+            "payment": "Mehrere Zahlungsoptionen"
+        }
+    },
+    "common": {
+        "useCode": "VERWENDEN SIE LIGHT10 FÜR 10% RABATT!",
+        "buyNow": "Jetzt kaufen"
+    },
+    "trustedPartners": {
+        "title": "Vertraut von Lasergravur-Profis weltweit",
+        "items": [
+            {
+                "name": "Kompatibel mit Adobe",
+                "description": "Vektordateien direkt in LightBurn importieren"
+            },
+            {
+                "name": "Funktioniert mit CorelDRAW",
+                "description": "Reibungsloser Import von Vektordesigns"
+            },
+            {
+                "name": "Autodesk-kompatibel",
+                "description": "Volle Unterstützung für DXF- und CAD-Zeichnungen"
+            },
+            {
+                "name": "Offizielles LightBurn Pro",
+                "description": "Autorisierter Händler • Originallizenz"
+            }
+        ]
+    },
+    "productDetails": {
+        "whatYouGet": "Was Sie erhalten",
+        "compatibleControllers": "Kompatible Controller",
+        "features": [
+            "Sofortige Lieferung (1-30 Minuten)",
+            "Keine versteckten Kosten oder Gebühren",
+            "Sichere Zahlungen",
+            "24/7 Kundensupport",
+            "Lebenslange Aktivierung",
+            "12 Monate kostenlose Updates",
+            "30 Tage Geld-zurück-Garantie"
+        ]
+    },
+    "saleBanner": {
+        "endsIn": "ANGEBOT ENDET IN:",
+        "applyCode": "CODE AN DER KASSE ANWENDEN",
+        "useCode": "VERWENDEN SIE LIGHT10 FÜR 10% RABATT",
+        "cta": "Jetzt herunterladen",
+        "time": {
+            "days": "Tage",
+            "hours": "Stunden",
+            "minutes": "Minuten",
+            "seconds": "Sekunden"
+        }
+    },
+    "checkout": {
+        "title": "Kasse",
+        "backToStore": "Zurück zum Shop",
+        "empty": "Ihr Warenkorb ist leer.",
+        "continueShopping": "Weiter einkaufen",
+        "contact": {
+            "title": "Kontaktinformationen",
+            "email": "E-Mail-Adresse",
+            "note": "Ihre Produktlizenz wird an diese E-Mail gesendet."
+        },
+        "personal": {
+            "title": "Persönliche Daten",
+            "firstName": "Vorname",
+            "lastName": "Nachname"
+        },
+        "payment": {
+            "title": "Zahlungsmethode",
+            "processing": "Verarbeitung...",
+            "paySecurely": "Sicher bezahlen",
+            "guarantee": "Garantiert sicherer Checkout"
+        },
+        "summary": {
+            "title": "Bestellübersicht",
+            "subtotal": "Zwischensumme",
+            "discount": "Rabatt",
+            "shipping": "Versand",
+            "free": "Kostenlos",
+            "total": "Gesamt"
+        },
+        "coupon": {
+            "placeholder": "Gutscheincode",
+            "apply": "Anwenden",
+            "applied": "Angewendet",
+            "success": "Gutschein erfolgreich angewendet!"
+        },
+        "trust": {
+            "secure": "Sichere Zahlung",
+            "ssl": "SSL-verschlüsselt",
+            "protection": "Käuferschutz"
+        }
+    },
+    "success": {
+        "title": "Vielen Dank!",
+        "message": "Ihre Bestellung wurde erfolgreich aufgegeben. Sie erhalten in Kürze eine E-Mail-Bestätigung.",
+        "continue": "Weiter einkaufen",
+        "loading": {
+            "title": "Bestellung wird bestätigt...",
+            "message": "Bitte warten Sie, während wir Ihre Zahlung überprüfen."
+        },
+        "error": {
+            "title": "Etwas ist schiefgelaufen",
+            "message": "Wir konnten Ihre Zahlung nicht automatisch bestätigen. Wenn Sie belastet wurden, wenden Sie sich bitte an den Support.",
+            "contact": "Support kontaktieren"
+        }
+    },
+    "contact": {
+        "title": "Kontaktieren Sie uns",
+        "subtitle": "Haben Sie Fragen zu LightBurn Pro? Unser Team ist rund um die Uhr für Sie da.",
+        "directContact": "Oder schreiben Sie uns direkt an:",
+        "success": {
+            "title": "Nachricht gesendet!",
+            "message": "Vielen Dank für Ihre Nachricht. Wir melden uns innerhalb von 24 Stunden bei Ihnen.",
+            "sendAnother": "Weitere Nachricht senden"
+        },
+        "error": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.",
+        "form": {
+            "name": "Ihr Name",
+            "namePlaceholder": "Max Mustermann",
+            "email": "E-Mail-Adresse",
+            "emailPlaceholder": "max@beispiel.de",
+            "subject": "Betreff",
+            "selectSubject": "Wählen Sie einen Betreff",
+            "message": "Nachricht",
+            "messagePlaceholder": "Wie können wir Ihnen helfen?",
+            "submit": "Nachricht senden",
+            "subjects": {
+                "sales": "Verkaufsanfrage",
+                "support": "Technischer Support",
+                "licensing": "Lizenzfrage",
+                "refund": "Rückerstattungsanfrage",
+                "other": "Sonstiges"
+            }
+        }
+    },
+    "legal": {
+        "updated": "Zuletzt aktualisiert: Januar 2025",
+        "contactEmail": "contact@lightburnos.com",
+        "termsOfService": {
+            "title": "Allgemeine Geschäftsbedingungen",
+            "sections": [
+                {
+                    "heading": "1. Annahme der Bedingungen",
+                    "paragraphs": [
+                        "Mit dem Zugriff auf diese Website und ihrer Nutzung erklären Sie sich mit diesen Bedingungen einverstanden. Wenn Sie diesen Bedingungen nicht zustimmen, nutzen Sie diesen Dienst bitte nicht."
+                    ]
+                },
+                {
+                    "heading": "2. Produkte und Leistungen",
+                    "paragraphs": [
+                        "Wir verkaufen digitale Softwarelizenzen für LightBurn Pro. Alle Käufe werden ausschließlich digital geliefert. Lizenzschlüssel werden innerhalb von 1 bis 30 Minuten nach erfolgreicher Zahlung per E-Mail zugestellt."
+                    ]
+                },
+                {
+                    "heading": "3. Lizenzbedingungen",
+                    "paragraphs": [
+                        "Jede LightBurn-Pro-Lizenz berechtigt Sie zur Installation und Nutzung der Software auf bis zu zwei Computern für den privaten Gebrauch. Für gewerbliche Lizenzen und Mehrplatzlizenzen gelten gesonderte Vereinbarungen."
+                    ]
+                },
+                {
+                    "heading": "4. Zahlung",
+                    "paragraphs": [
+                        "Die Preise werden, soweit unterstützt, in Ihrer lokalen Währung angezeigt. Die Zahlung wird sicher über unsere Zahlungsdienstleister abgewickelt. Wir akzeptieren gängige Kredit- und Debitkarten. Alle Verkäufe sind endgültig, soweit unsere Rückerstattungsrichtlinie nichts anderes vorsieht."
+                    ]
+                },
+                {
+                    "heading": "5. Lieferung",
+                    "paragraphs": [
+                        "Lizenzschlüssel werden digital per E-Mail geliefert. Die Lieferung erfolgt in der Regel innerhalb von 1 bis 30 Minuten nach Zahlungsbestätigung. Sollten Sie Ihre Lizenz nicht innerhalb von 24 Stunden erhalten, wenden Sie sich bitte an unseren Support."
+                    ]
+                },
+                {
+                    "heading": "6. Geistiges Eigentum",
+                    "paragraphs": [
+                        "LightBurn sowie alle zugehörigen Marken, Logos und Inhalte sind Eigentum der jeweiligen Rechteinhaber. Wir sind ein autorisierter Händler der Software LightBurn Pro."
+                    ]
+                },
+                {
+                    "heading": "7. Haftungsbeschränkung",
+                    "paragraphs": [
+                        "Wir haften nicht für indirekte Schäden, Folgeschäden, Neben- oder Sonderschäden sowie Strafschadensersatz, die sich aus der Nutzung oder der Unmöglichkeit der Nutzung des Dienstes oder der erworbenen Produkte ergeben."
+                    ]
+                },
+                {
+                    "heading": "8. Änderungen der Bedingungen",
+                    "paragraphs": [
+                        "Wir behalten uns vor, diese Bedingungen jederzeit zu ändern. Änderungen treten mit ihrer Veröffentlichung auf der Website in Kraft. Die fortgesetzte Nutzung der Website gilt als Zustimmung zu den geänderten Bedingungen."
+                    ]
+                },
+                {
+                    "heading": "9. Kontakt",
+                    "paragraphs": [
+                        "Bei Fragen zu diesen Bedingungen erreichen Sie uns unter {email}."
+                    ]
+                }
+            ]
+        },
+        "privacyPolicy": {
+            "title": "Datenschutzerklärung",
+            "sections": [
+                {
+                    "heading": "1. Welche Daten wir erheben",
+                    "paragraphs": [
+                        "Wir erheben die Daten, die Sie uns direkt übermitteln, darunter Ihren Namen, Ihre E-Mail-Adresse, Ihre Zahlungsdaten sowie alle weiteren Angaben, die Sie bei einem Kauf oder einer Kontaktaufnahme freiwillig machen."
+                    ]
+                },
+                {
+                    "heading": "2. Wie wir Ihre Daten verwenden",
+                    "paragraphs": [
+                        "Wir verwenden die erhobenen Daten, um:"
+                    ],
+                    "list": [
+                        "Ihre Bestellungen zu bearbeiten und Ihre Softwarelizenz zu liefern",
+                        "Ihnen Bestellbestätigungen und Lizenzschlüssel zuzusenden",
+                        "Ihre Kommentare, Fragen und Anliegen zu beantworten",
+                        "Sie über Produkte, Leistungen und Angebote zu informieren",
+                        "Trends, Nutzung und Aktivitäten auszuwerten"
+                    ]
+                },
+                {
+                    "heading": "3. Weitergabe von Daten",
+                    "paragraphs": [
+                        "Wir verkaufen, tauschen oder übertragen Ihre personenbezogenen Daten nicht an Dritte. Ausgenommen sind vertrauenswürdige Partner, die uns beim Betrieb der Website, bei der Geschäftstätigkeit oder bei Ihrer Betreuung unterstützen und sich zur Vertraulichkeit verpflichten."
+                    ]
+                },
+                {
+                    "heading": "4. Datensicherheit",
+                    "paragraphs": [
+                        "Wir treffen angemessene technische und organisatorische Maßnahmen, um Ihre personenbezogenen Daten vor unbefugtem Zugriff, Veränderung, Offenlegung oder Zerstörung zu schützen. Sämtliche Zahlungsvorgänge werden mittels SSL verschlüsselt."
+                    ]
+                },
+                {
+                    "heading": "5. Cookies",
+                    "paragraphs": [
+                        "Wir setzen Cookies ein, um Ihr Erlebnis auf unserer Website zu verbessern, etwa um Ihren Warenkorb und Ihre Einstellungen zu speichern. Sie können Cookies in Ihren Browsereinstellungen deaktivieren, wodurch einzelne Funktionen eingeschränkt sein können."
+                    ]
+                },
+                {
+                    "heading": "6. Ihre Rechte",
+                    "paragraphs": [
+                        "Sie haben das Recht:"
+                    ],
+                    "list": [
+                        "Auskunft über die zu Ihrer Person gespeicherten Daten zu erhalten",
+                        "Die Berichtigung unrichtiger Daten zu verlangen",
+                        "Die Löschung Ihrer Daten zu verlangen",
+                        "Werblichen Mitteilungen zu widersprechen"
+                    ]
+                },
+                {
+                    "heading": "7. Kontakt",
+                    "paragraphs": [
+                        "Bei Fragen zu dieser Datenschutzerklärung erreichen Sie uns unter {email}."
+                    ]
+                }
+            ]
+        },
+        "refundPolicy": {
+            "title": "Rückerstattungsrichtlinie",
+            "sections": [
+                {
+                    "heading": "30 Tage Geld-zurück-Garantie",
+                    "paragraphs": [
+                        "Sie sollen mit Ihrem Kauf rundum zufrieden sein. Sollte Ihnen LightBurn Pro aus irgendeinem Grund nicht zusagen, erstatten wir den vollen Kaufpreis innerhalb von 30 Tagen nach dem Kauf."
+                    ]
+                },
+                {
+                    "heading": "So beantragen Sie eine Rückerstattung",
+                    "paragraphs": [
+                        "Für eine Rückerstattung gehen Sie bitte wie folgt vor:"
+                    ],
+                    "list": [
+                        "Schreiben Sie uns an {email}",
+                        "Geben Sie Ihre Bestellnummer und die beim Kauf verwendete E-Mail-Adresse an",
+                        "Erläutern Sie kurz den Grund Ihrer Anfrage"
+                    ]
+                },
+                {
+                    "heading": "Abwicklung der Rückerstattung",
+                    "paragraphs": [
+                        "Nach Genehmigung Ihrer Anfrage bearbeiten wir die Rückerstattung innerhalb von 5 bis 7 Werktagen. Der Betrag wird dem ursprünglich verwendeten Zahlungsmittel gutgeschrieben."
+                    ]
+                },
+                {
+                    "heading": "Bedingungen",
+                    "paragraphs": [
+                        "Bitte beachten Sie die folgenden Bedingungen:"
+                    ],
+                    "list": [
+                        "Die Anfrage muss innerhalb von 30 Tagen nach dem Kaufdatum gestellt werden",
+                        "Der Lizenzschlüssel darf nicht bereits zuvor erstattet worden sein",
+                        "Wir bitten Sie gegebenenfalls um eine Rückmeldung, um unseren Service zu verbessern"
+                    ]
+                },
+                {
+                    "heading": "Nicht erstattungsfähige Fälle",
+                    "paragraphs": [
+                        "Bei Verdacht auf Betrug oder Missbrauch der Rückerstattungsrichtlinie behalten wir uns vor, Anfragen abzulehnen. Mehrfache Anfragen desselben Kunden können ebenfalls geprüft werden."
+                    ]
+                },
+                {
+                    "heading": "Noch Fragen?",
+                    "paragraphs": [
+                        "Bei Fragen zu unserer Rückerstattungsrichtlinie schreiben Sie uns an {email}. Wir helfen Ihnen gerne weiter."
+                    ]
+                }
+            ]
+        },
+        "shippingPolicy": {
+            "title": "Lieferbedingungen",
+            "intro": "Sofortiger Zugang zu Ihrer Software, direkt per E-Mail geliefert.",
+            "highlights": [
+                {
+                    "title": "Sofortige Lieferung",
+                    "description": "Ihr Lizenzschlüssel und Ihr Download-Link werden unmittelbar nach dem Kauf versendet."
+                },
+                {
+                    "title": "Lieferung per E-Mail",
+                    "description": "Prüfen Sie Ihren Posteingang sowie Ihren Spam-Ordner auf unsere E-Mail mit Ihrem Produkt."
+                }
+            ],
+            "sections": [
+                {
+                    "heading": "1. Ausschließlich digitale Lieferung",
+                    "paragraphs": [
+                        "Wir verkaufen ausschließlich digitale Softwarelizenzen. Es wird kein physisches Produkt an Ihre Adresse versandt. So ermöglichen wir sofortigen Zugang ohne Versandkosten und Wartezeiten."
+                    ]
+                },
+                {
+                    "heading": "2. Lieferzeit",
+                    "paragraphs": [
+                        "In den meisten Fällen erfolgt die Lieferung sofort. Unser System bearbeitet Ihre Bestellung unmittelbar nach der Zahlungsbestätigung; Ihre Bestätigungs-E-Mail mit Lizenzschlüssel und Download-Anleitung sollte Sie innerhalb von 1 bis 10 Minuten erreichen.",
+                        "In seltenen Fällen, in denen aus Sicherheitsgründen eine manuelle Prüfung erforderlich ist, kann die Lieferung bis zu 24 Stunden dauern."
+                    ]
+                },
+                {
+                    "heading": "3. Zugriff auf Ihren Kauf",
+                    "paragraphs": [
+                        "Nach Abschluss Ihrer Bestellung erhalten Sie eine E-Mail mit:"
+                    ],
+                    "list": [
+                        "Ihrem Lizenzschlüssel",
+                        "Dem offiziellen Download-Link zur Software",
+                        "Der Installationsanleitung",
+                        "Ihrer Rechnung und Ihrem Beleg"
+                    ]
+                },
+                {
+                    "heading": "4. Keine E-Mail erhalten?",
+                    "paragraphs": [
+                        "Sollten Sie innerhalb von 10 Minuten nach dem Kauf nichts erhalten haben, prüfen Sie bitte Folgendes:"
+                    ],
+                    "list": [
+                        "Ihren Spam- oder Junk-Ordner, da unsere E-Mails mitunter fälschlich gefiltert werden",
+                        "Den Reiter Werbung, falls Sie Gmail nutzen",
+                        "Ob die beim Bezahlvorgang eingegebene E-Mail-Adresse korrekt ist"
+                    ]
+                },
+                {
+                    "heading": "5. Systemanforderungen",
+                    "paragraphs": [
+                        "Da es sich um ein digitales Produkt handelt, prüfen Sie bitte vor dem Kauf, ob Ihr Computer die Mindestanforderungen erfüllt. Die Software läuft unter Windows 10 und Windows 11."
+                    ]
+                }
+            ],
+            "help": {
+                "title": "Brauchen Sie Hilfe?",
+                "description": "Bei Problemen mit Lieferung oder Installation ist unser Support rund um die Uhr für Sie da.",
+                "cta": "Support kontaktieren"
+            }
+        }
+    },
+    "problem": {
+        "eyebrow": "Das Problem",
+        "title": "Die Software sollte nicht das Schwierige sein",
+        "subtitle": "Die meisten verlieren mehr Zeit mit ihrer Software als mit ihrer Maschine.",
+        "items": [
+            {
+                "title": "Endlose Einrichtung",
+                "description": "Stunden mit Konfiguration, bevor Sie überhaupt schneiden."
+            },
+            {
+                "title": "Laufende Gebühren",
+                "description": "Abos, die sich Jahr für Jahr summieren."
+            },
+            {
+                "title": "Controller-Bindung",
+                "description": "Software, die nur mit einer Controller-Marke läuft."
+            },
+            {
+                "title": "Langsamer Support",
+                "description": "Tagelang auf Antwort warten, während ein Auftrag liegen bleibt."
+            }
+        ]
+    },
+    "solution": {
+        "eyebrow": "Die Lösung",
+        "title": "LightBurn Pro: das komplette Werkzeug",
+        "subtitle": "Professionelle Lasersoftware, die Ihnen nicht im Weg steht.",
+        "points": [
+            "Unterstützt Ruida, GRBL, Smoothieboard, TopWisdom und EZCad2",
+            "In Minuten einsatzbereit, nicht in Stunden",
+            "Einmal zahlen, dauerhaft nutzen — kein Abo, keine versteckten Kosten",
+            "24/7 Support von Menschen, die selbst mit Lasern arbeiten",
+            "Professionelle Ergebnisse ohne Komplexität"
+        ],
+        "cta": "Risikofrei testen — nur {price}"
+    },
+    "meta": {
+        "title": "LightBurn Pro 2.0 2026 - Software für Laserschneider",
+        "description": "LightBurn Pro 2.0 2026 Software für Laserschneider unter Windows. Einmalige Zahlung, sofortige Lieferung, lebenslange Aktivierung, 12 Monate kostenlose Updates und 30 Tage Geld-zurück-Garantie."
+    },
+    "coupon": {
+        "title": "Mit LIGHT10 10% Rabatt sichern",
+        "instruction": "Gutscheincode an der Kasse einlösen",
+        "copied": "Code kopiert",
+        "cta": "Weiter einkaufen",
+        "close": "Schließen"
+    }
+}

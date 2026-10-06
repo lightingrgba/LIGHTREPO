@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "dev",
+      "runtimeExecutable": "/private/tmp/claude-501/-Users-saidlmoumene-Library-Application-Support-Claude-scratch-workspaces-d609bbc2-3d8e-484a-b4ee-b217e145762c-97c51c03-e1a7-4160-ac6b-0aa9cde00a5f-scratch-2026-10-06-42d0e3/69d2aa8b-0fd1-4f9f-96ac-3664cc3bdf4d/scratchpad/node/bin/node",
+      "runtimeArgs": ["node_modules/next/dist/bin/next", "dev", "--webpack", "--port", "3000"],
+      "port": 3000
+    }
+  ]
+}
