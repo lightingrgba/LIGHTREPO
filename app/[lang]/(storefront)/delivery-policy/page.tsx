@@ -1,5 +1,11 @@
 export const runtime = 'edge'
 import { getDictionary } from "@/lib/dictionary"
+import { legalMetadata } from "@/lib/seo"
+
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }) {
+  const { lang } = await params
+  return legalMetadata(lang, "/delivery-policy", "shippingPolicy")
+}
 import { LegalPage } from "@/components/legal-page"
 import { ShieldCheck, Mail, Zap } from "lucide-react"
 

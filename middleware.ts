@@ -29,6 +29,15 @@ function getLocale(request: NextRequest) {
 export function middleware(request: NextRequest) {
     const { pathname } = request.nextUrl
 
+    // One canonical host: send www.lightburnpros.com to lightburnpros.com.
+    const host = request.headers.get('host') ?? ''
+    if (host.startsWith('www.')) {
+        const url = request.nextUrl.clone()
+        url.host = host.slice(4)
+        url.port = ''
+        return NextResponse.redirect(url, 301)
+    }
+
     // Skip internal paths and files
     if (
         pathname.startsWith('/_next') ||

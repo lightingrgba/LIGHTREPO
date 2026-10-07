@@ -1,6 +1,10 @@
 export const runtime = 'edge'
 
+import type { Metadata } from "next"
 import { getDictionary } from "@/lib/dictionary"
+import { pageMetadata, SITE_URL, OG_IMAGE } from "@/lib/seo"
+import { products } from "@/lib/products"
+import { CURRENCY_CONFIG } from "@/lib/currency"
 import { OfferBanner } from "@/components/sections/offer-banner"
 import { SalesHeroSection } from "@/components/sections/sales-hero-section"
 import { StatsBar } from "@/components/sections/stats-bar"
@@ -15,12 +19,47 @@ import { ReviewsSection } from "@/components/sections/reviews-section"
 import { FAQSection } from "@/components/sections/faq-section"
 import { SaleBanner } from "@/components/sections/sale-banner"
 
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params
+  const dict = await getDictionary(lang)
+  const meta = pageMetadata({ lang, path: "", title: dict.meta.title, description: dict.meta.description })
+  // The home page title already names the product; skip the "| LightBurn Pros" suffix.
+  return { ...meta, title: { absolute: dict.meta.title } }
+}
+
+/** Product + Offer structured data so search results can show price and availability. */
+function productJsonLd(lang: string) {
+  const product = products[0]
+  const currency = lang === "de" || lang === "fr" ? "EUR" : "USD"
+  const { price } = CURRENCY_CONFIG[currency]
+  return {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: product.name,
+    description: product.description,
+    image: [`${SITE_URL}${OG_IMAGE}`, `${SITE_URL}${product.image}`],
+    sku: product.id,
+    offers: {
+      "@type": "Offer",
+      url: `${SITE_URL}/${lang}`,
+      price: price.toFixed(2),
+      priceCurrency: currency,
+      availability: "https://schema.org/InStock",
+      itemCondition: "https://schema.org/NewCondition",
+    },
+  }
+}
+
 export default async function HomePage({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params
   const dict = await getDictionary(lang)
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productJsonLd(lang)) }}
+      />
       {/* Offer + hero */}
       <OfferBanner dict={dict.hero} />
       <SalesHeroSection dict={dict.hero} common={dict.common} />

@@ -1,4 +1,7 @@
 import { getDictionary } from "@/lib/dictionary"
+import { NO_INDEX } from "@/lib/seo"
+
+export const metadata = { ...NO_INDEX, title: "Order" }
 import { SuccessClient } from "@/components/success-client"
 
 export const runtime = 'edge'

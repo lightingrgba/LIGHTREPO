@@ -4,6 +4,10 @@
 // here on a server layout instead — nested segments inherit it.
 export const runtime = 'edge'
 
+import { NO_INDEX } from "@/lib/seo"
+
+export const metadata = NO_INDEX
+
 export default function AdminGroupLayout({
     children,
 }: {

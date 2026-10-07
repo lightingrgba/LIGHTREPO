@@ -19,18 +19,13 @@ export async function generateMetadata({
     const dict = await getDictionary(lang)
 
     return {
-        title: dict.meta.title,
+        metadataBase: new URL(SITE_URL),
+        title: { default: dict.meta.title, template: `%s | ${SITE_NAME}` },
         description: dict.meta.description,
         keywords: ["lightburn", "laser engraving", "laser cutting", "software", "CNC"],
         icons: {
             icon: "/logo-icon.webp",
             apple: "/logo-icon.webp",
-        },
-        openGraph: {
-            title: dict.meta.title,
-            description: dict.meta.description,
-            type: "website",
-            locale: lang,
         },
     }
 }
@@ -42,6 +37,7 @@ export const viewport: Viewport = {
 }
 
 import { getDictionary } from "@/lib/dictionary"
+import { SITE_NAME, SITE_URL } from "@/lib/seo"
 
 import Script from "next/script"
 import { GOOGLE_ADS_ID } from "@/lib/gtag"
