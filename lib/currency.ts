@@ -1,7 +1,7 @@
 export type Currency = 'USD' | 'EUR' | 'GBP'
 
 export const CURRENCY_CONFIG = {
-    USD: { price: 69.72, originalPrice: 249.00, symbol: '$', label: 'USD' },
+    USD: { price: 69.99, originalPrice: 249.00, symbol: '$', label: 'USD' },
     EUR: { price: 57.72, originalPrice: 209.00, symbol: '€', label: 'EUR' },
     GBP: { price: 50.00, originalPrice: 179.00, symbol: '£', label: 'GBP' },
 }
