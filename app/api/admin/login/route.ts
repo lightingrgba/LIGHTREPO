@@ -5,7 +5,7 @@ export const runtime = "edge"
 
 // The address is fixed; only the password is a secret, and that stays in
 // the ADMIN_PASSWORD environment variable.
-const ADMIN_EMAIL = "admin@lightburnos.com"
+const ADMIN_EMAIL = "admin@lightburnpros.com"
 
 export async function POST(req: Request) {
     console.log("🔐 Login API called")

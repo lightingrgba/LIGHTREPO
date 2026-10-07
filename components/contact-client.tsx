@@ -165,11 +165,11 @@ export function ContactClient({ dict }: { dict: any }) {
                 <div className="mt-8 text-center">
                     <p className="text-gray-600 mb-2">{dict?.directContact || "Or email us directly at:"}</p>
                     <a
-                        href="mailto:contact@lightburnos.com"
+                        href="mailto:contact@lightburnpros.com"
                         className="inline-flex items-center gap-2 text-primary font-semibold hover:underline"
                     >
                         <Mail className="h-5 w-5" />
-                        contact@lightburnos.com
+                        contact@lightburnpros.com
                     </a>
                 </div>
             </div>

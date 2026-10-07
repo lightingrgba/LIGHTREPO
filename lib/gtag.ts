@@ -5,7 +5,16 @@
 // failed tag can never strand the customer on the page instead of sending
 // them to checkout.
 
-const BEGIN_CHECKOUT_SEND_TO = "AW-18484535885/ZizMCIKR3osdEM3Eju5E"
+// Your Google Ads account, e.g. "AW-123456789". Leave unset to load no Google tag.
+export const GOOGLE_ADS_ID = process.env.NEXT_PUBLIC_GOOGLE_ADS_ID ?? ""
+// Conversion labels from Google Ads (the part after the "/" in send_to).
+const BEGIN_CHECKOUT_LABEL = process.env.NEXT_PUBLIC_GOOGLE_ADS_BEGIN_CHECKOUT_LABEL ?? ""
+const PURCHASE_LABEL = process.env.NEXT_PUBLIC_GOOGLE_ADS_PURCHASE_LABEL ?? ""
+
+export const BEGIN_CHECKOUT_SEND_TO =
+    GOOGLE_ADS_ID && BEGIN_CHECKOUT_LABEL ? `${GOOGLE_ADS_ID}/${BEGIN_CHECKOUT_LABEL}` : ""
+export const PURCHASE_SEND_TO =
+    GOOGLE_ADS_ID && PURCHASE_LABEL ? `${GOOGLE_ADS_ID}/${PURCHASE_LABEL}` : ""
 
 // Google's snippet defaults; used when a caller has no live price to pass.
 const DEFAULT_VALUE = 1.0
@@ -59,7 +68,7 @@ export function reportBeginCheckout({ url, value, currency, location }: Conversi
 
     const gtag = typeof window !== "undefined" ? (window as any).gtag : undefined
 
-    if (typeof gtag !== "function") {
+    if (typeof gtag !== "function" || !BEGIN_CHECKOUT_SEND_TO) {
         navigate()
         return
     }

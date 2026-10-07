@@ -44,6 +44,7 @@ export const viewport: Viewport = {
 import { getDictionary } from "@/lib/dictionary"
 
 import Script from "next/script"
+import { GOOGLE_ADS_ID } from "@/lib/gtag"
 
 export default async function RootLayout({
     children,
@@ -66,21 +67,25 @@ export default async function RootLayout({
     return (
         <html lang={lang} className={`${inter.variable} ${geistMono.variable}`}>
             <body className="font-sans antialiased">
-                {/* Google tag (gtag.js) */}
-                <Script
-                    async
-                    src="https://www.googletagmanager.com/gtag/js?id=AW-18484535885"
-                    strategy="afterInteractive"
-                />
-                <Script id="google-tag" strategy="afterInteractive">
-                    {`
-                        window.dataLayer = window.dataLayer || [];
-                        function gtag(){dataLayer.push(arguments);}
-                        gtag('js', new Date());
+                {/* Google tag (gtag.js), only when NEXT_PUBLIC_GOOGLE_ADS_ID is set */}
+                {GOOGLE_ADS_ID && (
+                    <>
+                        <Script
+                            async
+                            src={`https://www.googletagmanager.com/gtag/js?id=${GOOGLE_ADS_ID}`}
+                            strategy="afterInteractive"
+                        />
+                        <Script id="google-tag" strategy="afterInteractive">
+                            {`
+                                window.dataLayer = window.dataLayer || [];
+                                function gtag(){dataLayer.push(arguments);}
+                                gtag('js', new Date());
 
-                        gtag('config', 'AW-18484535885');
-                    `}
-                </Script>
+                                gtag('config', '${GOOGLE_ADS_ID}');
+                            `}
+                        </Script>
+                    </>
+                )}
                 <CurrencyProvider initialCurrency={currency}>
                     <Suspense fallback={null}>
                         <AnalyticsTracker />

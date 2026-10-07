@@ -6,6 +6,7 @@ import { useEffect, useState, Suspense } from "react"
 import { useSearchParams } from "next/navigation"
 import { useCartStore } from "@/lib/cart-store"
 import Script from "next/script"
+import { PURCHASE_SEND_TO } from "@/lib/gtag"
 
 function SuccessContent({ dict }: { dict: any }) {
     const searchParams = useSearchParams()
@@ -78,11 +79,11 @@ function SuccessContent({ dict }: { dict: any }) {
 
     return (
         <div className="text-center">
-            {orderDetails && (
+            {orderDetails && PURCHASE_SEND_TO && (
                 <Script id="google-ads-conversion" strategy="afterInteractive">
                     {`
                         gtag('event', 'conversion', {
-                            'send_to': 'AW-17873403949/qWP_COO15OYbEK2A2spC',
+                            'send_to': '${PURCHASE_SEND_TO}',
                             'value': ${orderDetails.amount},
                             'currency': '${orderDetails.currency}',
                             'transaction_id': '${paymentIntentId}'

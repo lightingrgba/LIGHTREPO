@@ -114,7 +114,7 @@ export default function AdminLayout({
                             </div>
                             <div className="flex-1 min-w-0">
                                 <p className="text-xs font-medium text-gray-900 truncate">Admin User</p>
-                                <p className="text-xs text-gray-500 truncate">{userEmail || "admin@lightburnos.com"}</p>
+                                <p className="text-xs text-gray-500 truncate">{userEmail || "admin@lightburnpros.com"}</p>
                             </div>
                         </div>
                     </div>

@@ -1,30 +1,29 @@
-# E-commerce website build
+# LightBurn Pros
 
-*Automatically synced with your [v0.app](https://v0.app) deployments*
+Storefront for [lightburnpros.com](https://lightburnpros.com), built with Next.js and deployed on Cloudflare Pages with a D1 database.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/kabourchaabi-6130s-projects/v0-e-commerce-website-build)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.app-black?style=for-the-badge)](https://v0.app/chat/n5xOGUXTV1H)
+## Development
 
-## Overview
-
-This repository will stay in sync with your deployed chats on [v0.app](https://v0.app).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.app](https://v0.app).
+```bash
+pnpm install
+pnpm dev
+```
 
 ## Deployment
 
-Your project is live at:
+Pushes to `main` deploy automatically through Cloudflare Pages
+(build command `npx @cloudflare/next-on-pages@1`, output `.vercel/output/static`).
 
-**[https://vercel.com/kabourchaabi-6130s-projects/v0-e-commerce-website-build](https://vercel.com/kabourchaabi-6130s-projects/v0-e-commerce-website-build)**
+## Settings
 
-## Build your app
+Set these in Cloudflare Pages → Settings → Variables and secrets:
 
-Continue building your app on:
-
-**[https://v0.app/chat/n5xOGUXTV1H](https://v0.app/chat/n5xOGUXTV1H)**
-
-## How It Works
-
-1. Create and modify your project using [v0.app](https://v0.app)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+| Name | Purpose |
+|---|---|
+| `ADMIN_PASSWORD` | Admin panel password (login email: admin@lightburnpros.com) |
+| `ADMIN_API_TOKEN` | Long random string protecting the admin APIs |
+| `NEXT_PUBLIC_CHECKOUT_URL` | Payment link the Buy buttons send customers to |
+| `NEXT_PUBLIC_GOOGLE_ADS_ID` | Google Ads tag ID, e.g. `AW-123456789` (optional) |
+| `NEXT_PUBLIC_GOOGLE_ADS_BEGIN_CHECKOUT_LABEL` | Conversion label for checkout clicks (optional) |
+| `NEXT_PUBLIC_GOOGLE_ADS_PURCHASE_LABEL` | Conversion label for completed purchases (optional) |
+| `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID` | Order alerts on Telegram (optional) |
