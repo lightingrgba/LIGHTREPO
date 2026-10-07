@@ -5,6 +5,6 @@ pages_build_output_dir = ".vercel/output/static"
 
 [[d1_databases]]
 binding = "DB"
-database_name = "lightburn-db"
-database_id = "35af2dd1-9dd7-4454-875c-3321814b0015"
+database_name = "lightburnpros-db"
+database_id = "bd085b36-d252-4c28-8534-1660efd3b967"
 migrations_dir = "drizzle"
