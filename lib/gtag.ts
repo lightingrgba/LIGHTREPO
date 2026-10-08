@@ -5,8 +5,12 @@
 // failed tag can never strand the customer on the page instead of sending
 // them to checkout.
 
-// Your Google Ads account, e.g. "AW-123456789". Leave unset to load no Google tag.
+// Google Analytics 4 measurement ID.
+export const GOOGLE_ANALYTICS_ID = process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID || "G-WMYWT95VBY"
+// Your Google Ads account, e.g. "AW-123456789". Leave unset to skip Ads tracking.
 export const GOOGLE_ADS_ID = process.env.NEXT_PUBLIC_GOOGLE_ADS_ID ?? ""
+// Every Google product configured on the single gtag.js tag.
+export const GOOGLE_TAG_IDS = [GOOGLE_ANALYTICS_ID, GOOGLE_ADS_ID].filter(Boolean)
 // Conversion labels from Google Ads (the part after the "/" in send_to).
 const BEGIN_CHECKOUT_LABEL = process.env.NEXT_PUBLIC_GOOGLE_ADS_BEGIN_CHECKOUT_LABEL ?? ""
 const PURCHASE_LABEL = process.env.NEXT_PUBLIC_GOOGLE_ADS_PURCHASE_LABEL ?? ""

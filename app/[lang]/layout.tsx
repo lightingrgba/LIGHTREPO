@@ -40,7 +40,7 @@ import { getDictionary } from "@/lib/dictionary"
 import { SITE_NAME, SITE_URL } from "@/lib/seo"
 
 import Script from "next/script"
-import { GOOGLE_ADS_ID } from "@/lib/gtag"
+import { GOOGLE_TAG_IDS } from "@/lib/gtag"
 
 export default async function RootLayout({
     children,
@@ -63,12 +63,12 @@ export default async function RootLayout({
     return (
         <html lang={lang} className={`${inter.variable} ${geistMono.variable}`}>
             <body className="font-sans antialiased">
-                {/* Google tag (gtag.js), only when NEXT_PUBLIC_GOOGLE_ADS_ID is set */}
-                {GOOGLE_ADS_ID && (
+                {/* Google tag (gtag.js): one tag for Analytics and, if set, Google Ads */}
+                {GOOGLE_TAG_IDS.length > 0 && (
                     <>
                         <Script
                             async
-                            src={`https://www.googletagmanager.com/gtag/js?id=${GOOGLE_ADS_ID}`}
+                            src={`https://www.googletagmanager.com/gtag/js?id=${GOOGLE_TAG_IDS[0]}`}
                             strategy="afterInteractive"
                         />
                         <Script id="google-tag" strategy="afterInteractive">
@@ -77,7 +77,7 @@ export default async function RootLayout({
                                 function gtag(){dataLayer.push(arguments);}
                                 gtag('js', new Date());
 
-                                gtag('config', '${GOOGLE_ADS_ID}');
+                                ${GOOGLE_TAG_IDS.map((id) => `gtag('config', '${id}');`).join('\n')}
                             `}
                         </Script>
                     </>

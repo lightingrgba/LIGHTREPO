@@ -23,6 +23,7 @@ Set these in Cloudflare Pages → Settings → Variables and secrets:
 | `ADMIN_PASSWORD` | Admin panel password (login email: admin@lightburnpros.com) |
 | `ADMIN_API_TOKEN` | Long random string protecting the admin APIs |
 | `NEXT_PUBLIC_CHECKOUT_URL` | Payment link the Buy buttons send customers to |
+| `NEXT_PUBLIC_GOOGLE_ANALYTICS_ID` | Google Analytics 4 ID (defaults to `G-WMYWT95VBY`) |
 | `NEXT_PUBLIC_GOOGLE_ADS_ID` | Google Ads tag ID, e.g. `AW-123456789` (optional) |
 | `NEXT_PUBLIC_GOOGLE_ADS_BEGIN_CHECKOUT_LABEL` | Conversion label for checkout clicks (optional) |
 | `NEXT_PUBLIC_GOOGLE_ADS_PURCHASE_LABEL` | Conversion label for completed purchases (optional) |
