@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react"
 import { usePathname, useSearchParams } from "next/navigation"
+import { reportPageView } from "@/lib/gtag"
 
 export function AnalyticsTracker() {
     const pathname = usePathname()
@@ -22,6 +23,9 @@ export function AnalyticsTracker() {
         if (!visitorId) return
 
         const url = pathname + (searchParams?.toString() ? `?${searchParams.toString()}` : "")
+
+        // Google Ads page-view conversion, on first load and every in-app navigation.
+        reportPageView()
 
         // Send tracking data
         fetch("/api/track", {

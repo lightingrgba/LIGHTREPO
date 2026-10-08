@@ -8,7 +8,7 @@
 // Google Analytics 4 measurement ID.
 export const GOOGLE_ANALYTICS_ID = process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID || "G-WMYWT95VBY"
 // Your Google Ads account, e.g. "AW-123456789". Leave unset to skip Ads tracking.
-export const GOOGLE_ADS_ID = process.env.NEXT_PUBLIC_GOOGLE_ADS_ID ?? ""
+export const GOOGLE_ADS_ID = process.env.NEXT_PUBLIC_GOOGLE_ADS_ID || "AW-18395189852"
 // Every Google product configured on the single gtag.js tag.
 export const GOOGLE_TAG_IDS = [GOOGLE_ANALYTICS_ID, GOOGLE_ADS_ID].filter(Boolean)
 // Conversion labels from Google Ads (the part after the "/" in send_to).
@@ -17,6 +17,37 @@ const PURCHASE_LABEL = process.env.NEXT_PUBLIC_GOOGLE_ADS_PURCHASE_LABEL ?? ""
 
 export const BEGIN_CHECKOUT_SEND_TO =
     GOOGLE_ADS_ID && BEGIN_CHECKOUT_LABEL ? `${GOOGLE_ADS_ID}/${BEGIN_CHECKOUT_LABEL}` : ""
+const ADD_TO_BASKET_SEND_TO =
+    process.env.NEXT_PUBLIC_GOOGLE_ADS_ADD_TO_BASKET_SEND_TO || "AW-18395189852/FbJtCJOvw5UdENykwcNE"
+
+const PAGE_VIEW_SEND_TO =
+    process.env.NEXT_PUBLIC_GOOGLE_ADS_PAGE_VIEW_SEND_TO || "AW-18395189852/NrQgCJmvw5UdENykwcNE"
+
+/**
+ * Queue a gtag command. Works before gtag.js has loaded: commands wait in
+ * dataLayer and are sent once the tag arrives, so an early event isn't lost.
+ */
+function queueGtag(..._args: unknown[]) {
+    if (typeof window === "undefined" || !GOOGLE_ADS_ID) return
+    const w = window as any
+    w.dataLayer = w.dataLayer || []
+    // gtag.js expects the Arguments object itself, exactly as its own snippet pushes it.
+    // eslint-disable-next-line prefer-rest-params
+    w.dataLayer.push(arguments)
+}
+
+/** Google Ads "Add to basket" conversion; fired whenever a product enters the cart. */
+export function reportAddToBasket() {
+    if (!ADD_TO_BASKET_SEND_TO) return
+    queueGtag("event", "conversion", { send_to: ADD_TO_BASKET_SEND_TO, value: 1.0, currency: "EUR" })
+}
+
+/** Google Ads "Page view" conversion; fired on every page the visitor opens. */
+export function reportPageView() {
+    if (!PAGE_VIEW_SEND_TO) return
+    queueGtag("event", "conversion", { send_to: PAGE_VIEW_SEND_TO, value: 1.0, currency: "EUR" })
+}
+
 export const PURCHASE_SEND_TO =
     GOOGLE_ADS_ID && PURCHASE_LABEL ? `${GOOGLE_ADS_ID}/${PURCHASE_LABEL}` : ""
 

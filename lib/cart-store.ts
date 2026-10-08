@@ -1,6 +1,7 @@
 import { create } from "zustand"
 import { persist } from "zustand/middleware"
 import type { Product } from "./products"
+import { reportAddToBasket } from "./gtag"
 
 // One licence is sold per customer, so a line can never hold more than one.
 const MAX_QUANTITY_PER_ITEM = 1
@@ -26,12 +27,11 @@ export const useCartStore = create<CartStore>()(
       items: [],
 
       addItem: (product) => {
-        set((state) => {
-          const existingItem = state.items.find((item) => item.product.id === product.id)
-          // One licence per customer: re-adding is a no-op rather than a bump.
-          if (existingItem) return state
-          return { items: [...state.items, { product, quantity: MAX_QUANTITY_PER_ITEM }] }
-        })
+        // One licence per customer: re-adding is a no-op rather than a bump,
+        // and is not reported as a new add-to-basket conversion.
+        if (get().items.some((item) => item.product.id === product.id)) return
+        set((state) => ({ items: [...state.items, { product, quantity: MAX_QUANTITY_PER_ITEM }] }))
+        reportAddToBasket()
       },
 
       removeItem: (productId) => {
