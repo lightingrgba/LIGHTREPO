@@ -12,7 +12,7 @@ export const GOOGLE_ADS_ID = process.env.NEXT_PUBLIC_GOOGLE_ADS_ID || "AW-184348
 // Every Google product configured on the single gtag.js tag.
 export const GOOGLE_TAG_IDS = [GOOGLE_ANALYTICS_ID, GOOGLE_ADS_ID].filter(Boolean)
 // Conversion labels from Google Ads (the part after the "/" in send_to).
-const BEGIN_CHECKOUT_LABEL = process.env.NEXT_PUBLIC_GOOGLE_ADS_BEGIN_CHECKOUT_LABEL ?? ""
+const BEGIN_CHECKOUT_LABEL = process.env.NEXT_PUBLIC_GOOGLE_ADS_BEGIN_CHECKOUT_LABEL || "uM9pCM6EnpgdELHys9ZE"
 const PURCHASE_LABEL = process.env.NEXT_PUBLIC_GOOGLE_ADS_PURCHASE_LABEL ?? ""
 
 export const BEGIN_CHECKOUT_SEND_TO =
@@ -54,7 +54,7 @@ export const PURCHASE_SEND_TO =
 
 // Google's snippet defaults; used when a caller has no live price to pass.
 const DEFAULT_VALUE = 1.0
-const DEFAULT_CURRENCY = "EUR"
+const DEFAULT_CURRENCY = "USD"
 
 // Longest we wait for the tag before navigating anyway.
 const NAVIGATE_TIMEOUT_MS = 1000
