@@ -22,7 +22,7 @@ const ADD_TO_BASKET_SEND_TO =
     process.env.NEXT_PUBLIC_GOOGLE_ADS_ADD_TO_BASKET_SEND_TO || "AW-18434816305/EKcdCIeUnZgdELHys9ZE"
 
 const PAGE_VIEW_SEND_TO =
-    process.env.NEXT_PUBLIC_GOOGLE_ADS_PAGE_VIEW_SEND_TO || ""
+    process.env.NEXT_PUBLIC_GOOGLE_ADS_PAGE_VIEW_SEND_TO || "AW-18434816305/GJMkCMuEnpgdELHys9ZE"
 
 /**
  * Queue a gtag command. Works before gtag.js has loaded: commands wait in
@@ -46,7 +46,7 @@ export function reportAddToBasket() {
 /** Google Ads "Page view" conversion; fired on every page the visitor opens. */
 export function reportPageView() {
     if (!PAGE_VIEW_SEND_TO) return
-    queueGtag("event", "conversion", { send_to: PAGE_VIEW_SEND_TO, value: 1.0, currency: "EUR" })
+    queueGtag("event", "conversion", { send_to: PAGE_VIEW_SEND_TO, value: 1.0, currency: "USD" })
 }
 
 export const PURCHASE_SEND_TO =
