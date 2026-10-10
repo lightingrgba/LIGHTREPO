@@ -19,7 +19,7 @@ export const BEGIN_CHECKOUT_SEND_TO =
     GOOGLE_ADS_ID && BEGIN_CHECKOUT_LABEL ? `${GOOGLE_ADS_ID}/${BEGIN_CHECKOUT_LABEL}` : ""
 // Conversion targets ("AW-.../label"). Empty until the new Ads account has them.
 const ADD_TO_BASKET_SEND_TO =
-    process.env.NEXT_PUBLIC_GOOGLE_ADS_ADD_TO_BASKET_SEND_TO || ""
+    process.env.NEXT_PUBLIC_GOOGLE_ADS_ADD_TO_BASKET_SEND_TO || "AW-18434816305/EKcdCIeUnZgdELHys9ZE"
 
 const PAGE_VIEW_SEND_TO =
     process.env.NEXT_PUBLIC_GOOGLE_ADS_PAGE_VIEW_SEND_TO || ""
@@ -40,7 +40,7 @@ function queueGtag(..._args: unknown[]) {
 /** Google Ads "Add to basket" conversion; fired whenever a product enters the cart. */
 export function reportAddToBasket() {
     if (!ADD_TO_BASKET_SEND_TO) return
-    queueGtag("event", "conversion", { send_to: ADD_TO_BASKET_SEND_TO, value: 1.0, currency: "EUR" })
+    queueGtag("event", "conversion", { send_to: ADD_TO_BASKET_SEND_TO, value: 1.0, currency: "USD" })
 }
 
 /** Google Ads "Page view" conversion; fired on every page the visitor opens. */
