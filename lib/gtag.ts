@@ -8,7 +8,7 @@
 // Google Analytics 4 measurement ID.
 export const GOOGLE_ANALYTICS_ID = process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID || "G-WMYWT95VBY"
 // Your Google Ads account, e.g. "AW-123456789". Leave unset to skip Ads tracking.
-export const GOOGLE_ADS_ID = process.env.NEXT_PUBLIC_GOOGLE_ADS_ID || "AW-18395189852"
+export const GOOGLE_ADS_ID = process.env.NEXT_PUBLIC_GOOGLE_ADS_ID || "AW-18434816305"
 // Every Google product configured on the single gtag.js tag.
 export const GOOGLE_TAG_IDS = [GOOGLE_ANALYTICS_ID, GOOGLE_ADS_ID].filter(Boolean)
 // Conversion labels from Google Ads (the part after the "/" in send_to).
@@ -17,11 +17,12 @@ const PURCHASE_LABEL = process.env.NEXT_PUBLIC_GOOGLE_ADS_PURCHASE_LABEL ?? ""
 
 export const BEGIN_CHECKOUT_SEND_TO =
     GOOGLE_ADS_ID && BEGIN_CHECKOUT_LABEL ? `${GOOGLE_ADS_ID}/${BEGIN_CHECKOUT_LABEL}` : ""
+// Conversion targets ("AW-.../label"). Empty until the new Ads account has them.
 const ADD_TO_BASKET_SEND_TO =
-    process.env.NEXT_PUBLIC_GOOGLE_ADS_ADD_TO_BASKET_SEND_TO || "AW-18395189852/FbJtCJOvw5UdENykwcNE"
+    process.env.NEXT_PUBLIC_GOOGLE_ADS_ADD_TO_BASKET_SEND_TO || ""
 
 const PAGE_VIEW_SEND_TO =
-    process.env.NEXT_PUBLIC_GOOGLE_ADS_PAGE_VIEW_SEND_TO || "AW-18395189852/NrQgCJmvw5UdENykwcNE"
+    process.env.NEXT_PUBLIC_GOOGLE_ADS_PAGE_VIEW_SEND_TO || ""
 
 /**
  * Queue a gtag command. Works before gtag.js has loaded: commands wait in
