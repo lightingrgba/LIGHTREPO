@@ -75,12 +75,6 @@ export function Header({ dict }: { dict?: any }) {
                 {dict?.home || "Home"}
               </LocaleLink>
               <LocaleLink
-                href="/blog"
-                className="text-sm font-medium text-gray-700 hover:text-primary transition-colors"
-              >
-                {dict?.blog || "Blog"}
-              </LocaleLink>
-              <LocaleLink
                 href="/contact"
                 className="text-sm font-medium text-gray-700 hover:text-primary transition-colors"
               >
@@ -153,13 +147,6 @@ export function Header({ dict }: { dict?: any }) {
               >
                 {dict?.shop || "Shopping Cart"}
               </button>
-              <LocaleLink
-                href="/blog"
-                className="block py-2 text-gray-700 hover:text-primary font-medium"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                {dict?.blog || "Blog"}
-              </LocaleLink>
               <LocaleLink
                 href="/contact"
                 className="block py-2 text-gray-700 hover:text-primary font-medium"
