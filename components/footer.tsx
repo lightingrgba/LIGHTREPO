@@ -57,8 +57,8 @@ export function Footer({ dict }: { dict?: any }) {
                 </LocaleLink>
               </li>
               <li>
-                <LocaleLink href="#" className="text-sm hover:text-white transition-colors">
-                  {dict?.quickLinks?.search || "Search"}
+                <LocaleLink href="/blog" className="text-sm hover:text-white transition-colors">
+                  {dict?.quickLinks?.blog || "Blog"}
                 </LocaleLink>
               </li>
             </ul>

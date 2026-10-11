@@ -50,20 +50,24 @@ export function pageMetadata({
     path,
     title,
     description,
+    englishOnly = false,
 }: {
     lang: string
     path: string
     title: string
     description: string
+    /** Content that exists only in English (the blog): canonical is always /en. */
+    englishOnly?: boolean
 }): Metadata {
-    const translated = (SEO_LOCALES as readonly string[]).includes(lang)
+    const translated = !englishOnly && (SEO_LOCALES as readonly string[]).includes(lang)
     const canonical = url(translated ? lang : "en", path)
     const desc = clip(description)
+    const languages = englishOnly ? { en: canonical, "x-default": canonical } : languageAlternates(path)
 
     return {
         title,
         description: desc,
-        alternates: { canonical, languages: languageAlternates(path) },
+        alternates: { canonical, languages },
         openGraph: {
             title,
             description: desc,

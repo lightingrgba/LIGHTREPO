@@ -1,6 +1,7 @@
 {
     "header": {
         "home": "Startseite",
+        "blog": "Blog",
         "contact": "Kontakt",
         "refundPolicy": "Rückgabe- und Erstattungsrichtlinien",
         "login": "Anmelden / Registrieren",
@@ -19,6 +20,7 @@
         "quickLinks": {
             "title": "Schnelllinks",
             "shop": "Shop",
+            "blog": "Blog",
             "myAccount": "Mein Konto",
             "search": "Suche"
         },

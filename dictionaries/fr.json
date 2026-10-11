@@ -1,6 +1,7 @@
 {
     "header": {
         "home": "Accueil",
+        "blog": "Blog",
         "contact": "Contactez-nous",
         "refundPolicy": "Politique de remboursement",
         "login": "Connexion / Inscription",
@@ -19,6 +20,7 @@
         "quickLinks": {
             "title": "Liens rapides",
             "shop": "Boutique",
+            "blog": "Blog",
             "myAccount": "Mon compte",
             "search": "Rechercher"
         },

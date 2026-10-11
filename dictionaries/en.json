@@ -1,6 +1,7 @@
 {
     "header": {
         "home": "Home",
+        "blog": "Blog",
         "contact": "Contact Us",
         "refundPolicy": "Refund and Returns Policy",
         "login": "Login / Register",
@@ -19,6 +20,7 @@
         "quickLinks": {
             "title": "Quick Links",
             "shop": "Shop",
+            "blog": "Blog",
             "myAccount": "My Account",
             "search": "Search"
         },
