@@ -6,7 +6,7 @@
 // them to checkout.
 
 // Google Analytics 4 measurement ID.
-export const GOOGLE_ANALYTICS_ID = process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID || "G-WMYWT95VBY"
+export const GOOGLE_ANALYTICS_ID = process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID || "G-FCHCBT0TKR"
 // Your Google Ads account, e.g. "AW-123456789". Leave unset to skip Ads tracking.
 export const GOOGLE_ADS_ID = process.env.NEXT_PUBLIC_GOOGLE_ADS_ID || "AW-18434816305"
 // Every Google product configured on the single gtag.js tag.
